@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Cleanup Active Directory Domain Partitions and Metadata using NTDSUtil</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">使用NTDSUtil清理Active Directory域分区和元数据</h1>
+<blockquote>原文：<a href="https://medium.com/nerd-for-tech/cleanup-active-directory-domain-partitions-and-metadata-using-ntdsutil-e1326ceccd02?source=collection_archive---------4-----------------------#2021-07-29">https://medium.com/nerd-for-tech/cleanup-active-directory-domain-partitions-and-metadata-using-ntdsutil-e1326ceccd02?source=collection_archive---------4-----------------------#2021-07-29</a></blockquote><div><div class="ds hc hd he hf hg"/><div class="hh hi hj hk hl"><div class=""/><h1 id="3f57" class="il im ho bd in io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji bi translated">问题的原因</h1><p id="1976" class="pw-post-body-paragraph jj jk ho jl b jm jn jo jp jq jr js jt ju jv jw jx jy jz ka kb kc kd ke kf kg hh bi translated">如果域控制器(DC)在没有适当降级的情况下被删除，它将留下不需要的域分区和元数据，这可能会导致复制问题，并阻止新的域控制器升级到全局编录(GC)服务器。</p><p id="46f7" class="pw-post-body-paragraph jj jk ho jl b jm kh jo jp jq ki js jt ju kj jw jx jy kk ka kb kc kl ke kf kg hh bi translated">在服务器事件日志中，当尝试添加新的DC时，您可能会看到如下内容:</p><pre class="km kn ko kp fd kq kr ks kt aw ku bi"><span id="d972" class="kv im ho kr b fi kw kx l ky kz">event id 1800 with this error:<br/> A partial replica of partition…</span></pre></div></div>    
+</body>
+</html>
