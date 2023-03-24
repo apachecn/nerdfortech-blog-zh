@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Leases &amp; Fences— Distributed Design Patterns</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">租赁和栅栏——分布式设计模式</h1>
+<blockquote>原文：<a href="https://medium.com/nerd-for-tech/leases-fences-distributed-design-patterns-c1983eccc9b1?source=collection_archive---------1-----------------------#2022-09-21">https://medium.com/nerd-for-tech/leases-fences-distributed-design-patterns-c1983eccc9b1?source=collection_archive---------1-----------------------#2022-09-21</a></blockquote><div><div class="dt hd he hf hg hh"/><div class="hi hj hk hl hm"><div class=""/><p id="6469" class="pw-post-body-paragraph im in hp io b ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji jj hi bi translated">通过<strong class="io hq"> <em class="jk">锁定</em> </strong>可以保证我们想要独占访问的关键数据的一致性。然而，在分布式设置中，我们可能会遇到由于网络分区而导致进程暂停或节点关闭的情况。这导致资源被无限期锁定！</p><h2 id="d983" class="jl jm hp bd jn jo jp jq jr js jt ju jv ix jw jx jy jb jz ka kb jf kc kd ke kf bi translated">租约</h2><p id="1bdc" class="pw-post-body-paragraph im in hp io b ip kg ir is it kh iv iw ix ki iz ja jb kj jd je jf kk jh ji jj hi bi translated">为了克服上述问题，我们利用租赁。</p><blockquote class="kl km kn"><p id="7872" class="im in jk io b ip iq ir is it iu iv iw ko iy iz ja kp jc jd je kq jg jh ji jj hi bi translated">L <!-- -->案例是<strong class="io hq">有时间限制的锁</strong>，在超时之后，锁被管理它们的系统自动释放。</p></blockquote></div></div>    
+</body>
+</html>

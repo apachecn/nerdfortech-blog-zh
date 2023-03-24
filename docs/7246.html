@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Kubernetes Pod network connectivity issue with Istio enabled</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">启用 Istio 时 Kubernetes Pod 网络连接问题</h1>
+<blockquote>原文：<a href="https://medium.com/nerd-for-tech/kubernetes-pod-network-connectivity-issue-with-istio-enabled-c207dc2796c2?source=collection_archive---------0-----------------------#2022-09-06">https://medium.com/nerd-for-tech/kubernetes-pod-network-connectivity-issue-with-istio-enabled-c207dc2796c2?source=collection_archive---------0-----------------------#2022-09-06</a></blockquote><div><div class="ds hc hd he hf hg"/><div class="hh hi hj hk hl"><div class=""/><p id="3186" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">当试图在 Istio 边车运行前连接网络时，K8s Pod 可能会返回错误。</p><p id="6faa" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">许多应用程序在启动时执行命令或检查，这需要网络连接。如果<code class="du jj jk jl jm b">istio-proxy</code>边车容器没有准备好，这会导致应用程序容器挂起或重启。</p><p id="a468" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">本文演示了如何使用 Istio 的注释<code class="du jj jk jl jm b">holdApplicationUntilProxyStarts</code>来避免网络连接问题。</p><h1 id="5c91" class="jn jo ho bd jp jq jr js jt ju jv jw jx jy jz ka kb kc kd ke kf kg kh ki kj kk bi translated">测试环境</h1></div></div>    
+</body>
+</html>
